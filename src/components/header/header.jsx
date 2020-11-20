@@ -313,19 +313,6 @@ class Header extends Component {
 								</div>
 
 								<p>
-									The V2 and V3 buttons allow you to change the version of the
-									contracts used in your staking efforts. Always use the latest
-									version, V3.
-								</p>
-
-								<p>
-									The reason why 2 versions are available is because previous
-									beta testers staked funds in the V2 contract. We made some
-									improvements to the V3 contracts and we recommend you to use
-									them exclusively.
-								</p>
-
-								<p>
 									Every block you earn YELD tokens based on the stablecoin yield
 									generated in addition to your standard yield to boost the APY.
 								</p>
@@ -362,32 +349,6 @@ class Header extends Component {
 					{!this.state.burnedBalance ? null : (
 						<div><b>{Number(this.state.burnedBalance).toFixed(2)} YELD</b> burned&nbsp;</div>
 					)}
-
-					{/* Versions */}
-					<div className={classes.versionsContainer}>
-						<Button
-							style={{
-								border: this.props.v2Selected ? 'none' : '1px solid #376EDC',
-							}}
-							variant="outlined"
-							color="primary"
-							onClick={() => this.props.setV2Selected(false)}>
-							<Typography variant={'h5'} color="secondary">
-								V2
-							</Typography>
-						</Button>
-						<Button
-							style={{
-								border: this.props.v2Selected ? '1px solid #376EDC' : 'none',
-							}}
-							variant="outlined"
-							color="primary"
-							onClick={() => this.props.setV2Selected(true)}>
-							<Typography variant={'h5'} color="secondary">
-								V3
-							</Typography>
-						</Button>
-					</div>
 
 					{/* Yield Mechanics */}
 					<Button
