@@ -17,7 +17,7 @@ const WorkSans = {
 };
 
 export const colors = {
-  white: "#ffffff",
+  white: "#f2f4f7",
   whiteLight: "#f2f4f78c",
   black: "#000",
   darkBlue: "#2c3b57",

@@ -473,7 +473,7 @@ class InvestSimple extends Component {
               style={{ textAlign: "left" }}
             >
               {" "}
-              Your Optimized Yield Farm{" "}
+              Vaults{" "}
             </Typography>
             <div className={classes.investedVaults}>
               {account.address && value === 1 && this.renderAssetBlocksv2()}
@@ -544,7 +544,7 @@ class InvestSimple extends Component {
                   }
                 </Typography>
                 <Typography variant={ 'h4' }>
-                  ({ this.state.YELDAPY.toFixed(2) } % in YELD)
+                  ({ this.state.YELDAPY.toFixed(2) }% in YELD)
                 </Typography>
                 <Typography variant={ 'h5' } className={ classes.grey }>{ t('InvestSimple.InterestRate') }</Typography>
               </div>
@@ -561,7 +561,7 @@ class InvestSimple extends Component {
             </div>
           </AccordionSummary>
           <AccordionDetails>
-            <Asset 
+            <Asset
               asset={ asset }
               startLoading={ this.startLoading }
               retirementYeld={this.props.retirementYeld}

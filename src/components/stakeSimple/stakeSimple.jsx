@@ -422,7 +422,7 @@ class StakeSimple extends Component {
 							variant={'h3'}
 							className={classes.titleStake}
 							style={{ textAlign: 'left' }}>
-							ETH Earned
+							Stake YELD
 						</Typography>
 						<div className={classes.stakeOptions}>
 							<Box
@@ -441,7 +441,7 @@ class StakeSimple extends Component {
 									disabled={this.state.yeldBalance <= 0}
 									onClick={() => this.setState({ stakeModalOpen: true })}>
 									<Typography variant={'h5'} color="secondary">
-										Stake YELD ({this.state.yeldBalance} YELD)
+										Stakeable ({this.state.yeldBalance} YELD)
 										<br />
 										<i>
 											{this.state.retirementYeldCurrentStaked <= 0
