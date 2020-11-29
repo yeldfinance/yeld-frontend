@@ -60,7 +60,7 @@ class App extends Component {
   state = {
     setupComplete: false,
     betaValid: false,
-    displayWarning: true,
+    displayWarning: false,
     modalOpen: true,
     v2Selected: true,
     retirementYeld: null,
@@ -206,7 +206,7 @@ class App extends Component {
                   yeld={this.state.yeld}
                 />
                 {/* <Vaults /> */}
-                <StakeSimple 
+                <StakeSimple
                   retirementYeld={this.state.retirementYeld}
                   yDAI={this.state.yDAI}
                   yTUSD={this.state.yTUSD}
@@ -223,7 +223,7 @@ class App extends Component {
                     (!this.state.betaValid ? (
                       <h2 style={{ margin: 'auto' }}>You need to hold 5 YELD to use the dApp</h2>
                     ) : (
-                        <InvestSimple 
+                        <InvestSimple
                           retirementYeld={this.state.retirementYeld}
                           yDAI={this.state.yDAI}
                           yTUSD={this.state.yTUSD}

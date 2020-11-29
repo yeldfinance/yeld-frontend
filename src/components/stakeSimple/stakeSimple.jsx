@@ -519,8 +519,7 @@ class StakeSimple extends Component {
 								aria-describedby="simple-modal-description">
 								<div style={this.modalStyle} className={classes.paper}>
 									<Typography variant="h4" className={classes.title}>
-										Enter how much YELD you want to stake. Warning: leave at
-										least 5 YELD in your wallet to keep using the beta!"
+										How much yeld would you like to stake?
 									</Typography>
 									<br />
 									<TextField
