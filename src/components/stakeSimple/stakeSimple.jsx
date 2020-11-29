@@ -422,7 +422,7 @@ class StakeSimple extends Component {
 							variant={'h3'}
 							className={classes.titleStake}
 							style={{ textAlign: 'left' }}>
-							Your Retirement Stake
+							Stake YELD
 						</Typography>
 						<div className={classes.stakeOptions}>
 							<Box
@@ -441,7 +441,7 @@ class StakeSimple extends Component {
 									disabled={this.state.yeldBalance <= 0}
 									onClick={() => this.setState({ stakeModalOpen: true })}>
 									<Typography variant={'h5'} color="secondary">
-										Stake Yeld Tokens ({this.state.yeldBalance} YELD)
+										Stakeable ({this.state.yeldBalance} YELD)
 										<br />
 										<i>
 											{this.state.retirementYeldCurrentStaked <= 0
@@ -493,7 +493,7 @@ class StakeSimple extends Component {
 										style={{ color: '#000000' }}>
 										{!this.state.retirementYeldAvailable ? (
 											<span>
-												No ETH to Redeem Yet
+												No ETH to Redeem
 												<br />
 												<i>
 													{this.state.hoursPassedAfterStaking === '00m 00s'
@@ -503,7 +503,7 @@ class StakeSimple extends Component {
 											</span>
 										) : (
 											<span>
-												Redeem Retirement Yield ({this.state.earnings} ETH)
+												Redeem ({this.state.earnings} ETH)
 											</span>
 										)}
 									</Typography>
