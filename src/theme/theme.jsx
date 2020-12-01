@@ -3,13 +3,13 @@ import createBreakpoints from '@material-ui/core/styles/createBreakpoints'
 import WorkSansTTF from '../assets/fonts/WorkSans-VariableFont_wght.ttf';
 
 const WorkSans = {
-  fontFamily: 'Work Sans',
+  fontFamily: 'Work Sans Thin',
   fontStyle: 'normal',
   fontDisplay: 'swap',
   fontWeight: 400,
   src: `
-    local('Work Sans'),
-    local('Work Sans'),
+    local('Work Sans Thin'),
+    local('Work Sans Thin'),
     url(${WorkSansTTF}) format('truetype')
   `,
   unicodeRange:
@@ -58,7 +58,7 @@ const breakpoints = createBreakpoints({
 const iswapTheme = {
   typography: {
     fontFamily: [
-      '"Work Sans"',
+      '"Work Sans Thin"',
       "BlinkMacSystemFont",
       '"Segoe UI"',
       "Roboto",
@@ -253,15 +253,15 @@ const iswapTheme = {
           color: "#555",
         },
         "&:hover": {
-          backgroundColor: colors.white,
+          backgroundColor: colors.whiteLight,
         },
         "&$selected": {
-          backgroundColor: colors.white,
+          backgroundColor: colors.whiteLight,
           "& > span > h4": {
             color: "#fff",
           },
           "&:hover": {
-            backgroundColor: colors.white,
+            backgroundColor: colors.whiteLight,
             "& > span > h4": {
               color: "#000",
             },
