@@ -266,7 +266,7 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       minWidth: '1000px',
     }
-  }, 
+  },
   twoColumns: {
     display: 'grid',
     gridTemplateColumns: '1fr',
@@ -412,8 +412,8 @@ class Vault extends Component {
     return (
       <div className={ classes.root }>
         <div className={ classes.investedContainer }>
-          <Typography 
-            variant={'h5'} 
+          <Typography
+            variant={'h5'}
             className={ classes.disaclaimer }
             style={{ marginTop: '24px' }}
           >This project is in beta. Use at your own risk.</Typography>
